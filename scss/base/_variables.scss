@@ -1,26 +1,36 @@
-// tamaños //
-$altura-principal: 100vh;
-
-// colores //
-$color-texto-principal:black;
-$color-texto-secundario:white;
-
-// fuente //
+// FUENTES //
+// tipología //
 $fuente-principal: 'Lato', sans-serif;
 
 // tamaño de fuente //
-$fuente-grande: 7vh;
-$fuente-mediana: 5vh;
-$fuente-chica: 2.5vh;
-$fuente-minima: 2vh;
+$fuente-n6: 7vh;
+$fuente-n5: 5vh;
+$fuente-n4: 4.6vh;
+$fuente-n3: 2.5vh;
+$fuente-n2: 2.2vh;
+$fuente-n1: 2vh;
+$fuente-n0: 1.8vh;
 
 // grosor de fuerte //
-$grosor-ancho: 900;
-$grosor-mediano: 500;
-$grosor-fino: 300;
+$grosor-n4: 900;
+$grosor-n3: 600;
+$grosor-n2: 500;
+$grosor-n1: 300;
 
 // opacidad //
-$opacidad50: 0,5;
+$opacidad-por-defecto: 0.5;
+$opacidad-secundaria: 0.8;
 
 // línea divisoria //
-$altura-divisor: 110vh
+$altura-divisor: 110vh;
+
+// TIEMPO //
+// duración de animaciones //
+$duracion-por-defecto: 3s;
+
+// duración de transición //
+$transicion-por-defecto: all .3s ease-in-out;
+
+// MÁRGENES //
+// laterales //
+$margen-lateral-principal: 5vw;

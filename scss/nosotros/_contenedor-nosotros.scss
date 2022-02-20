@@ -1,0 +1,19 @@
+.contenedorNosotros{
+    display: grid;
+    grid-template-areas: "logo nav"
+                         "ppal ppal"
+                         "pie pie";
+    grid-template-rows: 10vh 295vh 5vh;
+    animation-name: contenedor;
+    animation-duration: $duracion-por-defecto;
+}
+
+@keyframes contenedor{
+    0%{
+        opacity: 0.0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}

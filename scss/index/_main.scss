@@ -1,5 +1,8 @@
 @import "base/variables";
+@import "base/lista";
+@import "index/contenedor";
 
+/*Contenido principal*/
 main{
     grid-area: ppal;
     display: grid;
@@ -11,92 +14,110 @@ main{
                          "project project project";
     grid-template-rows: 40vh 15vh 10vh 30vh 60vh 60vh;
     grid-template-columns: 30% 40% 30%;
+    /*Título secundario - Residencial*/
     h3{
-        font-weight: 600;
+        font-weight: $grosor-n3;
         grid-area: residencial;
         align-self: end;
         animation-name: colorTexto;
-        animation-duration: 3s;
+        animation-duration: $duracion-por-defecto;
     }
+    /*Título principal - Edificio A1*/
     h1{
-        font-size: 7vh;
-        font-weight: 900;
+        font-size: $fuente-n6;
+        font-weight: $grosor-n4;
         grid-area: edificio;
         align-self: start;
         animation-name: colorTexto;
-        animation-duration: 3s;
+        animation-duration: $duracion-por-defecto;
     }
+    /*Botón Ver proyecto*/
     .tituloVerProyecto{
-        font-size: 2.5vh;
-        font-weight: 500;
+        font-size: $fuente-n3;
+        font-weight: $grosor-n2;
         text-decoration: none;
-        color: black;
+        color: nth($colores, 1);
         grid-area: proy;
         align-self: start;
-        transition: ease-out 0.5s;
+        transition: $transicion-por-defecto;
         animation-name: colorTexto;
-        animation-duration: 5s;
+        animation-duration: $duracion-por-defecto + 2s;
         &:hover{
             opacity: 0.5;
-            font-size: 2.6vh;
+            font-size: $fuente-n3 + 0.05vh;
         }
     }
+
+    /*Línea divisoria*/
     .lineaDivisoria {
         position: absolute;
         margin-top: $altura-divisor;
         justify-self: center;
-        background-color: black;
+        background-color: nth($colores, 1);
         height: 0.5px;
         width: 50vw;
         opacity: 0.3;
     }
+
+    /* Título Sobre Nosotros*/
     h2{
         grid-area: quienes;
         align-self: start;
         margin-top: 20vh;
-        margin-left: 5vw;
-        font-size: 5vh;
+        margin-left: $margen-lateral-principal;
+        font-size: $fuente-n5;
     }
-    .textoQuienes{
+    /*Párrafos sobre nosotros*/
+    .sobreNosotrosTexto{
         margin-top: 20vh;
         margin-left: 40vh;
         margin-right: 20vh;
         grid-area: texto;
         align-self: start;
+        /*Primer título*/
         h6{
+            font-size: $fuente-n0;
             opacity: 0.5;
         }
+        /*Párrafo principal*/
         .parrafoUno{
             margin-top: 2vh;
-            font-weight: 600;
-            font-size: 2.2vh;
+            font-weight: $grosor-n3;
+            font-size: $fuente-n2;
         }
+        /*Párrafo secundario*/
         .parrafoDos{
-            font-size: 2vh;
+            font-size: $fuente-n1;
             margin-top: 3vh;
             margin-bottom: 4vh;
             column-count: 2;
             column-gap: 50% 50%;
         }
+        /*Botón conocer más*/
         a{
-            color: black;
-            font-weight: 400;
-            font-size: 2.2vh;
-            transition: ease-out 0.5s;
+            color: nth($colores, 1);
+            font-weight: $grosor-n1;
+            font-size: $fuente-n2;
+            transition: $transicion-por-defecto;
             &:hover{
-                opacity: 0.5;
+                opacity: $opacidad-por-defecto;
+                font-size: $fuente-n2 + 0.05vh;
             }
         }
     }
+
+    /*Línea divisoria*/
     .lineaDivisoriaDos {
         position: absolute;
         margin-top: $altura-divisor + 50vh;
         justify-self: center;
-        background-color: black;
+        background-color: nth($colores, 1);
         height: 0.5px;
         width: 50vw;
         opacity: 0.3;
     }
+
+    /*Nuestro proyectos*/
     .projectsMain{
         grid-area: project;
         display: grid;
@@ -104,84 +125,108 @@ main{
                              "texto projectOne projectTwo";
         grid-template-rows: 40% 60%;
         grid-template-columns: 25% 37.5% 37.5%;
+        /*Títulos proyectos*/
         .projectsTitulo{
             grid-area: titulo;
             align-self: start;
             margin-top: 10vh;
-            margin-left: 5vw;
-            font-size: 4.5vh;
+            margin-left: $margen-lateral-principal;
+            font-size: $fuente-n4;
         }
+        /*Párrafo explicativo de nuestros proyectos*/
         .projectsParrafo{
             grid-area: texto;
-            margin-left: 5vw;
+            margin-left: $margen-lateral-principal;
             justify-self: center;
-            font-weight: 500;
-            font-size: 2vh;
+            font-weight: $fuente-n3;
+            font-size: $fuente-n1;
+            /*Botón ver proyectos*/
             a{
-                color: black;
-                font-weight: 600;
-                font-size: 2vh;
+                color: nth($colores, 1);
+                font-weight: $grosor-n3;
+                font-size: $fuente-n1;
+                transition: $transicion-por-defecto;
                 &:hover{
-                    opacity: 0.5;
+                    opacity: $opacidad-por-defecto;
+                    font-size: $fuente-n1 + 0.05vh;
                 }
             }
         }
+        /*Primer proyecto*/
         .projectOne{
             grid-area: projectOne;
             margin-top: 12vh;
-            margin-left: 5vw;
+            margin-left: $margen-lateral-principal;
             a{
-                transition: ease-out 0.5s;
-                &:hover{
-                    opacity: 0.5;
-                }
                 img{
+                    transition: $transicion-por-defecto;
                     width: 100%;
+                    &:hover{
+                        opacity: $opacidad-secundaria;
+                        transform: scale(1.02);}
                 }
             }
+            /*Nombre del proyecto*/
             .tituloProjectOne{
-                font-size: 2vh;
+                font-size: $fuente-n1;
                 margin-top: 2vh;
             }
+            /*Nombre de la ubicación del proyecto*/
             .ubicacionProjectOne{
                 margin-top: 1vh;
                 opacity: 0.3;
             }
         }
+        /*Segundo proyecto*/
         .projectTwo{
             grid-area: projectTwo;
             margin-top: 12vh;
-            margin-left: 5vw;
+            margin-right: $margen-lateral-principal;
             a{
-                transition: ease-out 0.5s;
-                &:hover{
-                    opacity: 0.5;
-                }
                 img{
                     width: 100%;
+                    transition: $transicion-por-defecto;
+                    &:hover{
+                        opacity: $opacidad-secundaria;
+                        transform: scale(1.02);}
                 }
             }
+            /*Nombre del proyecto*/
             .tituloProjectTwo{
-                font-size: 2vh;
+                font-size: $fuente-n1;
                 margin-top: 2vh;
             }
+            /*Nombre de la ubicación del proyecto*/
             .ubicacionProjectTwo{
                 margin-top: 1vh;
                 opacity: 0.3;
             }
         }
-    }   
+    }
+
+    /*Línea divisoria*/
+    .lineaDivisoriaTres {
+        position: absolute;
+        margin-top: $altura-divisor + 105vh;
+        justify-self: center;
+        background-color:  nth($colores, 1);
+        height: 0.5px;
+        width: 50vw;
+        opacity: 0.3;
+    }
+
+    /*Logo de WhatsApp*/
     .logoWhatsapp{
         position: fixed;
         margin-left: 90vw;
         margin-top: 75vh;
         animation-name: colorTexto;
-        animation-duration: 3s;
+        animation-duration: $duracion-por-defecto;
         img{
             width: 90%;
-            transition: all .2s ease-in-out;
+            transition: $transicion-por-defecto;
             &:hover{
-                opacity: 0.8;
+                opacity: $opacidad-secundaria;
                 transform: scale(1.05);
             }
         }

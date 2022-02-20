@@ -1,12 +1,14 @@
+@import "index/contenedor";
+
 header {
     grid-area: logo;
     align-self: center;
     margin-left: 12vw;
     img{
-        width: 20%;
-        transition: ease-out 0.5s;
+        width: 25%;
+        transition: $transicion-por-defecto;
         animation-name: colorTexto;
-        animation-duration: 3s;
+        animation-duration: $duracion-por-defecto;
         &:hover{
             opacity: 0.5;
         }

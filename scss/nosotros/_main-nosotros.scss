@@ -1,0 +1,210 @@
+@import "base/variables";
+@import "base/lista";
+@import "nosotros/contenedor-nosotros";
+
+/*Contenido principal Nosotros*/
+.contenidoPrincipalNosotros{
+    grid-area: ppal;
+    display: grid;
+    grid-template-areas: ". . nuestro"
+                         ". . equipo"
+                         ". . wa"
+                         "part part part";
+    grid-template-rows: 40vh 15vh 60vh 100vh;
+    grid-template-columns: 30% 40% 30%;
+    /*Título secundario - Nuestro*/
+    h3{
+        font-weight: $grosor-n3;
+        grid-area: nuestro;
+        align-self: end;
+        animation-name: colorTexto;
+        animation-duration: $duracion-por-defecto;
+    }
+    /*Título principal - Equipo*/
+    h1{
+        font-size: $fuente-n6;
+        font-weight: $grosor-n4;
+        grid-area: equipo;
+        align-self: start;
+        animation-name: colorTexto;
+        animation-duration: $duracion-por-defecto;
+    }
+
+    /*Línea divisoria*/
+    .lineaDivisoriaNosotros {
+        position: absolute;
+        margin-top: $altura-divisor;
+        justify-self: center;
+        background-color: nth($colores, 1);
+        height: 0.5px;
+        width: 60vw;
+        opacity: 0.3;
+    }
+
+    /*Tarjetas de participantes del equipo*/
+    .participantes{
+        grid-area: part;
+        display: grid;
+        grid-template-areas: "soli soli soli"
+                             "belu belu belu"
+                             "jl jl jl"
+                             "jj jj jj";
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 45vh 45vh 45vh 45vh;
+        .cartaSoli{
+            grid-area: soli;
+            display: grid;
+            grid-template-areas: "titulo imagen"
+                                 "texto imagen";
+            grid-template-rows: 10vh 25vh;
+            img{
+                grid-area: imagen;
+                height: 100%;
+                margin-right: 20vw;
+            }
+            h4{
+                grid-area: titulo;
+                font-size: 5vh;
+                margin-left: 20vw;
+                font-weight: 300;
+            }
+            p{
+                grid-area: texto;
+                margin-left: 20vw;
+                margin-right: 5vw;
+                font-size: 3vh;
+                font-weight: 500;
+                font-style: italic;
+                opacity: 0.5;
+            }
+        }
+
+        /*Línea divisoria*/
+        .lineaDivisoriaNosotrosDos {
+            position: absolute;
+            margin-top: 40vh;
+            justify-self: center;
+            background-color: black;
+            height: 0.5px;
+            width: 60vw;
+            opacity: 0.3;
+        }
+
+        .cartaBelu{
+            grid-area: belu;
+            display: grid;
+            grid-template-areas: "titulo imagen"
+                                 "texto imagen";
+            grid-template-rows: 10vh 25vh;
+            img{
+                grid-area: imagen;
+                height: 100%;
+                margin-right: 20vw;
+            }
+            h4{
+                grid-area: titulo;
+                font-size: 5vh;
+                margin-left: 20vw;
+                font-weight: 300;
+            }
+            p{
+                grid-area: texto;
+                margin-left: 20vw;
+                margin-right: 5vw;
+                font-size: 3vh;
+                font-weight: 500;
+                font-style: italic;
+                opacity: 0.5;
+            }
+        }
+
+        /*Línea divisoria*/
+        .lineaDivisoriaNosotrosTres {
+            position: absolute;
+            margin-top: 85vh;
+            justify-self: center;
+            background-color: black;
+            height: 0.5px;
+            width: 60vw;
+            opacity: 0.3;
+        }
+
+        .cartaJl{
+            grid-area: jl;
+            display: grid;
+            grid-template-areas: "titulo imagen"
+                                 "texto imagen";
+            grid-template-rows: 10vh 25vh;
+            img{
+                grid-area: imagen;
+                height: 100%;
+                margin-right: 20vw;
+            }
+            h4{
+                grid-area: titulo;
+                font-size: 5vh;
+                margin-left: 20vw;
+                font-weight: 300;
+            }
+            p{
+                grid-area: texto;
+                margin-left: 20vw;
+                margin-right: 5vw;
+                font-size: 3vh;
+                font-weight: 500;
+                font-style: italic;
+                opacity: 0.5;
+            }
+        }
+
+        /*Línea divisoria*/
+        .lineaDivisoriaNosotrosCuatro {
+            position: absolute;
+            margin-top: 130vh;
+            justify-self: center;
+            background-color: black;
+            height: 0.5px;
+            width: 60vw;
+            opacity: 0.3;
+        }
+
+        .cartaJj{
+            grid-area: jj;
+            display: grid;
+            grid-template-areas: "titulo imagen"
+                                 "texto imagen";
+            grid-template-rows: 10vh 25vh;
+            img{
+                grid-area: imagen;
+                height: 100%;
+                margin-right: 20vw;
+            }
+            h4{
+                grid-area: titulo;
+                font-size: 5vh;
+                margin-left: 20vw;
+                font-weight: 300;
+            }
+            p{
+                grid-area: texto;
+                margin-left: 20vw;
+                margin-right: 5vw;
+                font-size: 3vh;
+                font-weight: 500;
+                font-style: italic;
+                opacity: 0.5;
+            }
+        }
+
+        /*Línea divisoria*/
+        .lineaDivisoriaNosotrosCinco {
+            position: absolute;
+            margin-top: 175vh;
+            justify-self: center;
+            background-color: black;
+            height: 0.5px;
+            width: 60vw;
+            opacity: 0.3;
+        }
+    }
+}

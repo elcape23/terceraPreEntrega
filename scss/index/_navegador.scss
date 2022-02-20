@@ -1,29 +1,34 @@
 @import "base/variables";
+@import "base/lista";
+@import "index/contenedor";
 
 nav{
     grid-area: nav;
     align-self: center;
     justify-self: right;
-    margin-right: 1vw;
+    margin-right: $margen-lateral-principal - 4vw;
     animation-name: colorTexto;
-    animation-duration: 3s;
+    animation-duration: $duracion-por-defecto;
     ul{
         display: flex;
         list-style: none;
         li{
-            transition: ease-out 0.2s;
+            transition: $transicion-por-defecto;
             &:hover{
                 transform: scale(1.03);
                 .subMenu{
                     display: block;
                 }
             }
+            .active{
+                font-weight: $grosor-n4;
+            }
             a{
                 padding: 1.5vh;
-                font-size: 2.2vh;
+                font-size: $fuente-n2;
                 text-decoration: none;
-                color: black;
-                transition: ease-out 0.5s;
+                color: nth($colores, 1);
+                transition: $transicion-por-defecto;
                 &:hover{
                     opacity: 0.5;
                 }

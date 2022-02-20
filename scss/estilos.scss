@@ -1,9 +1,12 @@
-@import "componentes/footer";
-@import "componentes/header";
-@import "componentes/navegador";
-@import "componentes/main";
-@import "componentes/footer";
 @import "base/variables";
+@import "base/lista";
+@import "index/footer";
+@import "index/header";
+@import "index/navegador";
+@import "index/main";
+@import "index/footer";
+@import "nosotros/contenedor-nosotros";
+@import "nosotros/main-nosotros";
 
 *{
     padding: 0%;
@@ -23,18 +26,4 @@
         animation-name: contenedor;
         animation-duration: 4s;
     }
-}
-
-.logoMyle{
-    width: 20%;
-    transition: ease-out 0.5s;
-    animation-name: colorTexto;
-    animation-duration: 3s;
-    &:hover{
-        opacity: 0.5;
-    }
-}
-
-.letraFuerte{
-    font-weight: $grosor-ancho;
 }

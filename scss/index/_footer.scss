@@ -1,4 +1,6 @@
 @import "base/variables";
+@import "base/lista";
+@import "index/contenedor";
 
 footer{
     grid-area: pie;
@@ -6,32 +8,31 @@ footer{
     grid-template-areas: "rrss copy";
     grid-template-columns: 45% 55%;
     animation-name: colorTexto;
-    animation-duration: 5s;
+    animation-duration: $duracion-por-defecto + 2s;
     ul{
         grid-area: rrss;
         display: flex;
         justify-self: right;
-        margin-right: 8vw;
+        margin-right: $margen-lateral-principal;
         list-style: none;
         align-self: center;
-        transition: ease-out 0.5s;
+        transition: $transicion-por-defecto;
         }
         li{
             a{
-                transition: all .2s ease-in-out;
                 svg{
-                    &:hover{
-                        opacity: 0.5;
-                        transform: scale(1.1);
-                }
+                transition: $transicion-por-defecto;
+                &:hover{
+                    opacity: $opacidad-secundaria;
+                    transform: scale(1.05);}
             }
         }
     }
     h2{
         grid-area: copy;
-        font-size: 2vh;
-        font-weight: 300;
+        font-size: $fuente-n1;
+        font-weight: $grosor-n1;
         align-self: center;
-        color: black;
+        color: nth($colores, 1);
     }
 }
