@@ -1,0 +1,37 @@
+@import "base/variables";
+
+footer{
+    grid-area: pie;
+    display: grid;
+    grid-template-areas: "rrss copy";
+    grid-template-columns: 45% 55%;
+    animation-name: colorTexto;
+    animation-duration: 5s;
+    ul{
+        grid-area: rrss;
+        display: flex;
+        justify-self: right;
+        margin-right: 8vw;
+        list-style: none;
+        align-self: center;
+        transition: ease-out 0.5s;
+        }
+        li{
+            a{
+                transition: all .2s ease-in-out;
+                svg{
+                    &:hover{
+                        opacity: 0.5;
+                        transform: scale(1.1);
+                }
+            }
+        }
+    }
+    h2{
+        grid-area: copy;
+        font-size: 2vh;
+        font-weight: 300;
+        align-self: center;
+        color: black;
+    }
+}

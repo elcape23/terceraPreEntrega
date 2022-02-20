@@ -1,0 +1,43 @@
+@import "base/variables";
+
+nav{
+    grid-area: nav;
+    align-self: center;
+    justify-self: right;
+    margin-right: 1vw;
+    animation-name: colorTexto;
+    animation-duration: 3s;
+    ul{
+        display: flex;
+        list-style: none;
+        li{
+            transition: ease-out 0.2s;
+            &:hover{
+                transform: scale(1.03);
+                .subMenu{
+                    display: block;
+                }
+            }
+            a{
+                padding: 1.5vh;
+                font-size: 2.2vh;
+                text-decoration: none;
+                color: black;
+                transition: ease-out 0.5s;
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+            ul{
+                display: none;
+                list-style: none;
+                position: absolute;
+                li{
+                    margin-top: 2vh;
+                    justify-self: left;
+                }
+            }
+        }
+    }
+
+}

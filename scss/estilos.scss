@@ -1,0 +1,40 @@
+@import "componentes/footer";
+@import "componentes/header";
+@import "componentes/navegador";
+@import "componentes/main";
+@import "componentes/footer";
+@import "base/variables";
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: $fuente-principal;
+}
+
+/*INDEX*/
+/*Imagen principal*/
+.imagenPrincipal{
+    position: absolute;
+    width: 98.93vw;
+    img{
+        position: absolute;
+        z-index: -1;
+        max-width: 100%;
+        animation-name: contenedor;
+        animation-duration: 4s;
+    }
+}
+
+.logoMyle{
+    width: 20%;
+    transition: ease-out 0.5s;
+    animation-name: colorTexto;
+    animation-duration: 3s;
+    &:hover{
+        opacity: 0.5;
+    }
+}
+
+.letraFuerte{
+    font-weight: $grosor-ancho;
+}

@@ -1,0 +1,14 @@
+header {
+    grid-area: logo;
+    align-self: center;
+    margin-left: 12vw;
+    img{
+        width: 20%;
+        transition: ease-out 0.5s;
+        animation-name: colorTexto;
+        animation-duration: 3s;
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+}

@@ -1,0 +1,189 @@
+@import "base/variables";
+
+main{
+    grid-area: ppal;
+    display: grid;
+    grid-template-areas: ". . residencial"
+                         ". . edificio"
+                         ". . proy"
+                         ". . wa"
+                         "quienes texto texto"
+                         "project project project";
+    grid-template-rows: 40vh 15vh 10vh 30vh 60vh 60vh;
+    grid-template-columns: 30% 40% 30%;
+    h3{
+        font-weight: 600;
+        grid-area: residencial;
+        align-self: end;
+        animation-name: colorTexto;
+        animation-duration: 3s;
+    }
+    h1{
+        font-size: 7vh;
+        font-weight: 900;
+        grid-area: edificio;
+        align-self: start;
+        animation-name: colorTexto;
+        animation-duration: 3s;
+    }
+    .tituloVerProyecto{
+        font-size: 2.5vh;
+        font-weight: 500;
+        text-decoration: none;
+        color: black;
+        grid-area: proy;
+        align-self: start;
+        transition: ease-out 0.5s;
+        animation-name: colorTexto;
+        animation-duration: 5s;
+        &:hover{
+            opacity: 0.5;
+            font-size: 2.6vh;
+        }
+    }
+    .lineaDivisoria {
+        position: absolute;
+        margin-top: $altura-divisor;
+        justify-self: center;
+        background-color: black;
+        height: 0.5px;
+        width: 50vw;
+        opacity: 0.3;
+    }
+    h2{
+        grid-area: quienes;
+        align-self: start;
+        margin-top: 20vh;
+        margin-left: 5vw;
+        font-size: 5vh;
+    }
+    .textoQuienes{
+        margin-top: 20vh;
+        margin-left: 40vh;
+        margin-right: 20vh;
+        grid-area: texto;
+        align-self: start;
+        h6{
+            opacity: 0.5;
+        }
+        .parrafoUno{
+            margin-top: 2vh;
+            font-weight: 600;
+            font-size: 2.2vh;
+        }
+        .parrafoDos{
+            font-size: 2vh;
+            margin-top: 3vh;
+            margin-bottom: 4vh;
+            column-count: 2;
+            column-gap: 50% 50%;
+        }
+        a{
+            color: black;
+            font-weight: 400;
+            font-size: 2.2vh;
+            transition: ease-out 0.5s;
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+    .lineaDivisoriaDos {
+        position: absolute;
+        margin-top: $altura-divisor + 50vh;
+        justify-self: center;
+        background-color: black;
+        height: 0.5px;
+        width: 50vw;
+        opacity: 0.3;
+    }
+    .projectsMain{
+        grid-area: project;
+        display: grid;
+        grid-template-areas: "titulo projectOne projectTwo"
+                             "texto projectOne projectTwo";
+        grid-template-rows: 40% 60%;
+        grid-template-columns: 25% 37.5% 37.5%;
+        .projectsTitulo{
+            grid-area: titulo;
+            align-self: start;
+            margin-top: 10vh;
+            margin-left: 5vw;
+            font-size: 4.5vh;
+        }
+        .projectsParrafo{
+            grid-area: texto;
+            margin-left: 5vw;
+            justify-self: center;
+            font-weight: 500;
+            font-size: 2vh;
+            a{
+                color: black;
+                font-weight: 600;
+                font-size: 2vh;
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+        }
+        .projectOne{
+            grid-area: projectOne;
+            margin-top: 12vh;
+            margin-left: 5vw;
+            a{
+                transition: ease-out 0.5s;
+                &:hover{
+                    opacity: 0.5;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            .tituloProjectOne{
+                font-size: 2vh;
+                margin-top: 2vh;
+            }
+            .ubicacionProjectOne{
+                margin-top: 1vh;
+                opacity: 0.3;
+            }
+        }
+        .projectTwo{
+            grid-area: projectTwo;
+            margin-top: 12vh;
+            margin-left: 5vw;
+            a{
+                transition: ease-out 0.5s;
+                &:hover{
+                    opacity: 0.5;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            .tituloProjectTwo{
+                font-size: 2vh;
+                margin-top: 2vh;
+            }
+            .ubicacionProjectTwo{
+                margin-top: 1vh;
+                opacity: 0.3;
+            }
+        }
+    }   
+    .logoWhatsapp{
+        position: fixed;
+        margin-left: 90vw;
+        margin-top: 75vh;
+        animation-name: colorTexto;
+        animation-duration: 3s;
+        img{
+            width: 90%;
+            transition: all .2s ease-in-out;
+            &:hover{
+                opacity: 0.8;
+                transform: scale(1.05);
+            }
+        }
+    }
+}
