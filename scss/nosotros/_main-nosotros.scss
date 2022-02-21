@@ -8,13 +8,14 @@
     display: grid;
     grid-template-areas: ". . nuestro"
                          ". . equipo"
-                         ". . wa"
+                         ". . ."
                          "part part part";
-    grid-template-rows: 40vh 15vh 60vh 100vh;
+    grid-template-rows: 60vh 5vh 50vh 100vh;
     grid-template-columns: 30% 40% 30%;
     /*Título secundario - Nuestro*/
     h3{
         font-weight: $grosor-n3;
+        font-size: $fuente-n4;
         grid-area: nuestro;
         align-self: end;
         animation-name: colorTexto;
@@ -22,7 +23,7 @@
     }
     /*Título principal - Equipo*/
     h1{
-        font-size: $fuente-n6;
+        font-size: $fuente-n7;
         font-weight: $grosor-n4;
         grid-area: equipo;
         align-self: start;
@@ -64,18 +65,18 @@
             }
             h4{
                 grid-area: titulo;
-                font-size: 5vh;
+                font-size: $fuente-n4;
                 margin-left: 20vw;
-                font-weight: 300;
+                font-weight: $grosor-n1;
             }
             p{
                 grid-area: texto;
                 margin-left: 20vw;
-                margin-right: 5vw;
-                font-size: 3vh;
-                font-weight: 500;
+                margin-right: $margen-lateral-principal;
+                font-size: $fuente-n3;
+                font-weight: $grosor-n2;
                 font-style: italic;
-                opacity: 0.5;
+                opacity: $opacidad-por-defecto;
             }
         }
 
@@ -103,18 +104,18 @@
             }
             h4{
                 grid-area: titulo;
-                font-size: 5vh;
+                font-size: $fuente-n5;
                 margin-left: 20vw;
-                font-weight: 300;
+                font-weight: $grosor-n1;
             }
             p{
                 grid-area: texto;
                 margin-left: 20vw;
-                margin-right: 5vw;
-                font-size: 3vh;
-                font-weight: 500;
+                margin-right: $margen-lateral-principal;
+                font-size: $fuente-n3;
+                font-weight: $grosor-n2;
                 font-style: italic;
-                opacity: 0.5;
+                opacity: $opacidad-por-defecto;
             }
         }
 
@@ -142,18 +143,18 @@
             }
             h4{
                 grid-area: titulo;
-                font-size: 5vh;
+                font-size: $fuente-n5;
                 margin-left: 20vw;
-                font-weight: 300;
+                font-weight: $grosor-n1;
             }
             p{
                 grid-area: texto;
                 margin-left: 20vw;
-                margin-right: 5vw;
-                font-size: 3vh;
-                font-weight: 500;
+                margin-right: $margen-lateral-principal;
+                font-size: $fuente-n3;
+                font-weight: $grosor-n1;
                 font-style: italic;
-                opacity: 0.5;
+                opacity: $opacidad-por-defecto;
             }
         }
 
@@ -181,18 +182,17 @@
             }
             h4{
                 grid-area: titulo;
-                font-size: 5vh;
+                font-size: $fuente-n5;
                 margin-left: 20vw;
-                font-weight: 300;
+                font-weight: $grosor-n1;
             }
             p{
-                grid-area: texto;
                 margin-left: 20vw;
-                margin-right: 5vw;
-                font-size: 3vh;
-                font-weight: 500;
+                margin-right: $margen-lateral-principal;
+                font-size: $fuente-n3;
+                font-weight: $grosor-n1;
                 font-style: italic;
-                opacity: 0.5;
+                opacity: $opacidad-por-defecto;
             }
         }
 

@@ -1,0 +1,24 @@
+@import "base/variables";
+@import "base/lista";
+
+.contenedorProyectos{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "logo . nav"
+                        "ppal ppal ppal"
+                        "pie pie pie";
+    grid-template-rows: 10% 80% 10%;
+    background-color: white;
+    animation-name: contenedorProyectos;
+    animation-duration: 3s;
+}
+
+@keyframes contenedorProyectos{
+    from{
+        background-color: black;
+    }
+
+    to{
+        background-color: white;
+    }
+}

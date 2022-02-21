@@ -1,3 +1,5 @@
+@import "base/variables";   
+
 .contenedorNosotros{
     display: grid;
     grid-template-areas: "logo nav"
@@ -16,4 +18,103 @@
     100%{
         opacity: 1;
     }
+}
+
+.botonSoli{
+    position: absolute;
+    width: 27.5vw;
+    height: 75vh;
+    margin-left: 45.65vw;
+    margin-top: 18.33vh;
+    animation-name: contenedor;
+    animation-duration: 1s;
+    transition: all 1s ease-in-out;
+    &:hover{
+        .imagenSoli{
+            display: block;
+        }
+    }
+}
+
+.imagenSoli{
+    display: none;
+    position: absolute;
+    width: 27.9vw;
+    animation-name: contenedor;
+    animation-duration: 1s;
+    transition: all 1s ease-in-out;
+}
+
+.botonJuanjo{
+    position: absolute;
+    width: 25vw;
+    height: 85vh;
+    margin-left: 73.5vw;
+    margin-top: 13.2vh;
+    animation-name: contenedor;
+    animation-duration: 1s;
+    transition: all 1s ease-in-out;
+    &:hover{
+        .imagenJuanjo{
+            display: block;
+        }
+    }
+}
+
+.imagenJuanjo{
+    display: none;
+    position: absolute;
+    width: 25.4vw;
+    animation-name: contenedor;
+    animation-duration: 1s;
+    transition: all 1s ease-in-out;
+}
+
+.botonJoseLuis{
+    position: absolute;
+    width: 30vw;
+    height: 75vh;
+    margin-left: 16.7vw;
+    margin-top: 23.08vh;
+    animation-name: contenedor;
+    animation-duration: 1s;
+    transition: all 1s ease-in-out;
+    &:hover{
+        .imagenJoseLuis{
+            display: block;
+        }
+    }
+}
+
+.imagenJoseLuis{
+    display: none;
+    position: absolute;
+    width: 30.145vw;
+    animation-name: contenedor;
+    animation-duration: 1s;
+    transition: all 1s ease-in-out;
+}
+
+.botonBelu{
+    position: absolute;
+    width: 20vw;
+    height: 75vh;
+    margin-top: 26.4vh;
+    animation-name: contenedor;
+    animation-duration: 1s;
+    transition: all 1s ease-in-out;
+    &:hover{
+        .imagenBelu{
+            display: block;
+        }
+    }
+}
+
+.imagenBelu{
+    display: none;
+    position: absolute;
+    width: 19.6vw;
+    animation-name: contenedor;
+    animation-duration: 1s;
+    transition: all 1s ease-in-out;
 }

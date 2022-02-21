@@ -1,12 +1,15 @@
 @import "base/variables";
 @import "base/lista";
-@import "index/footer";
+@import "index/contenedor";
 @import "index/header";
 @import "index/navegador";
 @import "index/main";
 @import "index/footer";
 @import "nosotros/contenedor-nosotros";
 @import "nosotros/main-nosotros";
+@import "proyectos/contenedor-proyectos";
+@import "proyectos/main-proyectos";
+@import "proyectos/footer-proyectos";
 
 *{
     padding: 0%;

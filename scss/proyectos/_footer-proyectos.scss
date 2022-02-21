@@ -1,0 +1,40 @@
+@import "base/variables";
+@import "base/lista";
+@import "proyectos/contenedor-proyectos";
+
+.piePaginaProyectos{
+    grid-area: pie;
+    display: grid;
+    grid-template-areas: "rrss copy";
+    grid-template-columns: 85% 15%;
+    animation-name: colorTexto;
+    animation-duration: 3s;
+    ul{
+        grid-area: rrss;
+        display: flex;
+        justify-self: left;
+        margin-left: 4vw;
+        list-style: none;
+        align-self: center;
+        }
+        li{
+            a{
+                svg{
+                transition: $transicion-por-defecto;
+                &:hover{
+                    opacity: 0.5;
+                    transform: scale(2);
+            }
+        }
+    }
+    h2{
+        grid-area: copy;
+        font-size: 1.6vh;
+        font-weight: 300;
+        justify-self: right;
+        margin-right: 1vw;
+        align-self: center;
+        color:black;
+        }
+    }
+}
