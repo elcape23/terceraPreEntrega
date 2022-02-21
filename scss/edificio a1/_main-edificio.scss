@@ -1,0 +1,71 @@
+@import "base/variables";
+@import "base/lista";
+@import "edificio a1/contenedor-edificio";
+
+.contenidoPrincipalEdificio{
+    grid-area: ppal;
+    display: grid;
+    grid-template-areas: "titulo titulo"
+                         "cuadro ."
+                         "boton .";
+    grid-template-rows: 5vh 70vh 10vh;
+    grid-template-columns: 70% 30%;
+    h2{
+        grid-area: titulo;
+        margin-top: 1px;
+        margin-left: $margen-lateral-principal + 7vw;
+    }
+    .ubicacion{
+        grid-area: cuadro;
+        background-color: nth($colores, 2);
+        height: 40vh;
+        width: 20vw;
+        padding: 2vw;
+        margin-top: 10vh;
+        margin-left: 12vw;
+        display: grid;
+        grid-template-areas: "ubicacion ubicacion"
+                             "direccion direccion"
+                             "cp cp"
+                             "email email"
+                             "contactate contactate"
+                             "llamar llamar";
+        grid-template-rows: 10vh 5vh 5vh 5vh 10vh 5vh;
+        .tituloUbicacion{
+            grid-area: ubicacion;
+            font-size: $fuente-n3-medio;
+        }
+        .tituloDireccion{
+            grid-area: direccion;
+            font-size: $fuente-n3;
+        }
+        .tituloCp{
+            grid-area: cp;
+            font-size: $fuente-n3;
+        }
+        .tituloEmail{
+            grid-area: email;
+            font-size: $fuente-n3;
+        }
+        .tituloContactate{
+            grid-area: contactate;
+            font-size: $fuente-n3;
+        }
+        .tituloLlamar{
+            grid-area: llamar;
+            font-size: $fuente-n3-medio;
+            text-decoration: none;
+            color: nth($colores, 1);
+            strong{
+                background-color: nth($colores, 3);
+                padding: 1vh;
+                border-radius: 2px;
+                &:hover{
+                    transform: scale(1.05);
+                    opacity: $opacidad-secundaria;
+                }
+            }
+
+        }
+    }
+}

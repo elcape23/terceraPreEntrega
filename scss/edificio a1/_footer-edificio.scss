@@ -1,0 +1,38 @@
+@import "base/variables";
+@import "base/lista";
+@import "edificio a1/contenedor-edificio";
+
+.piePaginaEdificio{
+    grid-area: pie;
+    display: grid;
+    grid-template-areas: "rrss copy";
+    grid-template-columns: 20% 80%;
+    animation-name: colorTexto;
+    animation-duration: $duracion-por-defecto + 2s;
+    ul{
+        grid-area: rrss;
+        display: flex;
+        justify-self: right;
+        margin-right: $margen-lateral-principal;
+        list-style: none;
+        align-self: center;
+        transition: $transicion-por-defecto;
+        }
+        li{
+            a{
+                svg{
+                transition: $transicion-por-defecto;
+                &:hover{
+                    opacity: $opacidad-secundaria;
+                    transform: scale(1.05);}
+            }
+        }
+    }
+    h2{
+        grid-area: copy;
+        font-size: $fuente-n1;
+        font-weight: $grosor-n1;
+        align-self: center;
+        color: nth($colores, 1);
+    }
+}

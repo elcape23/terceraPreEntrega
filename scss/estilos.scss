@@ -10,6 +10,11 @@
 @import "proyectos/contenedor-proyectos";
 @import "proyectos/main-proyectos";
 @import "proyectos/footer-proyectos";
+@import "contacto/contenedor-contacto";
+@import "contacto/main-contacto";
+@import "edificio a1/contenedor-edificio";
+@import "edificio a1/main-edificio";
+@import "edificio a1/footer-edificio";
 
 *{
     padding: 0%;
@@ -22,6 +27,30 @@
 .imagenPrincipal{
     position: absolute;
     width: 98.93vw;
+    img{
+        position: absolute;
+        z-index: -1;
+        max-width: 100%;
+        animation-name: contenedor;
+        animation-duration: 4s;
+    }
+}
+.imagenPrincipalContacto{
+    position: absolute;
+    width: 98.93vw;
+    margin-top: 17vh;
+    img{
+        position: absolute;
+        z-index: -1;
+        max-width: 100%;
+        animation-name: contenedor;
+        animation-duration: 4s;
+    }
+}
+.imagenPrincipalEdificio{
+    position: absolute;
+    width: 98.93vw;
+    margin-top: 17vh;
     img{
         position: absolute;
         z-index: -1;

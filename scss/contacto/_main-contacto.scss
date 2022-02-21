@@ -1,0 +1,86 @@
+@import "base/variables";
+@import "base/lista";
+@import "contacto/contenedor-contacto";
+
+.contenidoPrincipalContacto{
+    grid-area: ppal;
+    display: grid;
+    grid-template-areas: "titulo titulo"
+                         ". cuadro"
+                         "boton .";
+    grid-template-rows: 5vh 70vh 10vh;
+    grid-template-columns: 70vw 30vw;
+    h2{
+        grid-area: titulo;
+        margin-top: 1px;
+        margin-left: $margen-lateral-principal + 7vw;
+    }
+    .ubicacion{
+        grid-area: cuadro;
+        background-color: nth($colores, 2);
+        height: 50vh;
+        width: 20vw;
+        padding: 2vw;
+        margin-top: 10vh;
+        display: grid;
+        grid-template-areas: "ubicacion ubicacion"
+                             "direccion direccion"
+                             "cp cp"
+                             "email email"
+                             "contactate contactate"
+                             "telefono telefono"
+                             "llamar llamar";
+        grid-template-rows: 5vh 5vh 5vh 10vh 5vh 15vh 5vh;
+        .tituloUbicacion{
+            grid-area: ubicacion;
+            font-size: $fuente-n3-medio;
+        }
+        .tituloDireccion{
+            grid-area: direccion;
+        }
+        .tituloCp{
+            grid-area: cp;
+        }
+        .tituloEmail{
+            grid-area: email;
+        }
+        .tituloContactate{
+            grid-area: contactate;
+        }
+        .tituloTelefono{
+            grid-area: telefono;
+            font-size: $fuente-n4;
+            align-self: start;
+        }
+        .tituloLlamar{
+            grid-area: llamar;
+            font-size: $fuente-n3-medio;
+            text-decoration: none;
+            color: nth($colores, 1);
+            strong{
+                background-color: nth($colores, 3);
+                padding: 1vh;
+                border-radius: 2px;
+                &:hover{
+                    transform: scale(1.05);
+                    opacity: $opacidad-secundaria;
+                }
+            }
+
+        }
+    }
+    .botonTexto{
+        position: absolute;
+        width: 5vw;
+        margin-left: 34vw;
+        margin-top: 40vh;
+        }
+        img{
+            width: 100%;
+            transition: $transicion-por-defecto;
+            &:hover{
+                transform: scale(1.15);
+                opacity: $opacidad-secundaria;
+        }
+    }
+}

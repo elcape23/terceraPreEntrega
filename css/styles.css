@@ -3,6 +3,7 @@
   display: grid;
   grid-template-areas: "logo nav" "ppal ppal" "pie pie";
   grid-template-rows: 10vh 220vh 5vh;
+  grid-template-columns: 50% 50%;
   animation-name: contenedor;
   animation-duration: 3s; }
 
@@ -16,6 +17,7 @@
   display: grid;
   grid-template-areas: "logo nav" "ppal ppal" "pie pie";
   grid-template-rows: 10vh 220vh 5vh;
+  grid-template-columns: 50% 50%;
   animation-name: contenedor;
   animation-duration: 3s; }
 
@@ -30,7 +32,7 @@ header {
   align-self: center;
   margin-left: 12vw; }
   header img {
-    width: 25%;
+    width: 30%;
     transition: all 0.3s ease-in-out;
     animation-name: colorTexto;
     animation-duration: 3s; }
@@ -41,6 +43,7 @@ header {
   display: grid;
   grid-template-areas: "logo nav" "ppal ppal" "pie pie";
   grid-template-rows: 10vh 220vh 5vh;
+  grid-template-columns: 50% 50%;
   animation-name: contenedor;
   animation-duration: 3s; }
 
@@ -88,6 +91,7 @@ nav {
   display: grid;
   grid-template-areas: "logo nav" "ppal ppal" "pie pie";
   grid-template-rows: 10vh 220vh 5vh;
+  grid-template-columns: 50% 50%;
   animation-name: contenedor;
   animation-duration: 3s; }
 
@@ -285,6 +289,7 @@ main {
   display: grid;
   grid-template-areas: "logo nav" "ppal ppal" "pie pie";
   grid-template-rows: 10vh 220vh 5vh;
+  grid-template-columns: 50% 50%;
   animation-name: contenedor;
   animation-duration: 3s; }
 
@@ -325,6 +330,7 @@ footer {
   display: grid;
   grid-template-areas: "logo nav" "ppal ppal" "pie pie";
   grid-template-rows: 10vh 295vh 5vh;
+  grid-template-columns: 50% 50%;
   animation-name: contenedor;
   animation-duration: 3s; }
 
@@ -417,6 +423,7 @@ footer {
   display: grid;
   grid-template-areas: "logo nav" "ppal ppal" "pie pie";
   grid-template-rows: 10vh 295vh 5vh;
+  grid-template-columns: 50% 50%;
   animation-name: contenedor;
   animation-duration: 3s; }
 
@@ -669,45 +676,45 @@ footer {
       opacity: 0.3; }
 
 .contenedorProyectos {
-  height: 100vh;
   display: grid;
-  grid-template-areas: "logo . nav" "ppal ppal ppal" "pie pie pie";
-  grid-template-rows: 10% 80% 10%;
+  grid-template-areas: "logo . nav" "ppal ppal ppal" "pieProy pieProy pieProy";
+  grid-template-rows: 10vh 85vh 5vh;
+  grid-template-columns: 50% 25% 25%;
   background-color: white;
   animation-name: contenedorProyectos;
   animation-duration: 3s; }
 
 @keyframes contenedorProyectos {
-  from {
-    background-color: black; }
-  to {
-    background-color: white; } }
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
 
 .contenedorProyectos {
-  height: 100vh;
   display: grid;
-  grid-template-areas: "logo . nav" "ppal ppal ppal" "pie pie pie";
-  grid-template-rows: 10% 80% 10%;
+  grid-template-areas: "logo . nav" "ppal ppal ppal" "pieProy pieProy pieProy";
+  grid-template-rows: 10vh 85vh 5vh;
+  grid-template-columns: 50% 25% 25%;
   background-color: white;
   animation-name: contenedorProyectos;
   animation-duration: 3s; }
 
 @keyframes contenedorProyectos {
-  from {
-    background-color: black; }
-  to {
-    background-color: white; } }
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
 
 .contenidoPrincipalProyectos {
   grid-area: ppal;
   display: grid;
-  grid-template-areas: ". nuestros ." ". proyectos ." ". img ." ". . wa";
-  grid-template-rows: 5% 10% 80% 5%;
-  grid-template-columns: 15% 70% 15%; }
+  grid-template-areas: ". nuestros ." ". proyectos ." ". img .";
+  grid-template-rows: 5vh 8vh 72vh;
+  grid-template-columns: 12vw 76vw 12vw; }
   .contenidoPrincipalProyectos h3 {
     font-weight: 600;
     grid-area: nuestros;
-    align-self: center;
+    align-self: start;
     animation-name: colorTexto;
     animation-duration: 3s; }
   .contenidoPrincipalProyectos h1 {
@@ -718,50 +725,253 @@ footer {
     animation-name: colorTexto;
     animation-duration: 3s; }
   .contenidoPrincipalProyectos .carousel {
+    height: 72vh;
     grid-area: img;
     animation-name: carousel;
     animation-duration: 3s; }
+    .contenidoPrincipalProyectos .carousel div {
+      height: 100%; }
+      .contenidoPrincipalProyectos .carousel div img {
+        height: 100%; }
 
 .contenedorProyectos {
-  height: 100vh;
   display: grid;
-  grid-template-areas: "logo . nav" "ppal ppal ppal" "pie pie pie";
-  grid-template-rows: 10% 80% 10%;
+  grid-template-areas: "logo . nav" "ppal ppal ppal" "pieProy pieProy pieProy";
+  grid-template-rows: 10vh 85vh 5vh;
+  grid-template-columns: 50% 25% 25%;
   background-color: white;
   animation-name: contenedorProyectos;
   animation-duration: 3s; }
 
 @keyframes contenedorProyectos {
-  from {
-    background-color: black; }
-  to {
-    background-color: white; } }
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
 
 .piePaginaProyectos {
-  grid-area: pie;
-  display: grid;
-  grid-template-areas: "rrss copy";
-  grid-template-columns: 85% 15%;
-  animation-name: colorTexto;
-  animation-duration: 3s; }
+  grid-area: pieProy; }
   .piePaginaProyectos ul {
-    grid-area: rrss;
-    display: flex;
-    justify-self: left;
-    margin-left: 4vw;
+    position: absolute;
+    margin-bottom: 40vh;
     list-style: none;
-    align-self: center; }
+    transition: all 0.3s ease-in-out; }
   .piePaginaProyectos li a svg {
     transition: all 0.3s ease-in-out; }
     .piePaginaProyectos li a svg:hover {
-      opacity: 0.5;
-      transform: scale(2); }
-  .piePaginaProyectos li h2 {
-    grid-area: copy;
-    font-size: 1.6vh;
-    font-weight: 300;
+      opacity: 0.8;
+      transform: scale(1.05); }
+  .piePaginaProyectos .copyrightProyectos {
+    position: absolute;
+    margin-bottom: 40vh;
+    font-size: 1.8vh;
+    color: black;
+    transform: rotate(-90deg); }
+    .piePaginaProyectos .copyrightProyectos strong {
+      font-weight: 600; }
+
+.contenedorContacto {
+  display: grid;
+  grid-template-areas: "logo . nav" "ppal ppal ppal" "pie pie pie";
+  grid-template-rows: 10vh 85vh 5vh;
+  grid-template-columns: 50% 25% 25%;
+  animation-name: contenedorProyectos;
+  animation-duration: 3s; }
+
+@keyframes contenedorProyectos {
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
+
+.contenedorContacto {
+  display: grid;
+  grid-template-areas: "logo . nav" "ppal ppal ppal" "pie pie pie";
+  grid-template-rows: 10vh 85vh 5vh;
+  grid-template-columns: 50% 25% 25%;
+  animation-name: contenedorProyectos;
+  animation-duration: 3s; }
+
+@keyframes contenedorProyectos {
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
+
+.contenidoPrincipalContacto {
+  grid-area: ppal;
+  display: grid;
+  grid-template-areas: "titulo titulo" ". cuadro" "boton .";
+  grid-template-rows: 5vh 70vh 10vh;
+  grid-template-columns: 70vw 30vw; }
+  .contenidoPrincipalContacto h2 {
+    grid-area: titulo;
+    margin-top: 1px;
+    margin-left: 12vw; }
+  .contenidoPrincipalContacto .ubicacion {
+    grid-area: cuadro;
+    background-color: white;
+    height: 50vh;
+    width: 20vw;
+    padding: 2vw;
+    margin-top: 10vh;
+    display: grid;
+    grid-template-areas: "ubicacion ubicacion" "direccion direccion" "cp cp" "email email" "contactate contactate" "telefono telefono" "llamar llamar";
+    grid-template-rows: 5vh 5vh 5vh 10vh 5vh 15vh 5vh; }
+    .contenidoPrincipalContacto .ubicacion .tituloUbicacion {
+      grid-area: ubicacion;
+      font-size: 3.2vh; }
+    .contenidoPrincipalContacto .ubicacion .tituloDireccion {
+      grid-area: direccion; }
+    .contenidoPrincipalContacto .ubicacion .tituloCp {
+      grid-area: cp; }
+    .contenidoPrincipalContacto .ubicacion .tituloEmail {
+      grid-area: email; }
+    .contenidoPrincipalContacto .ubicacion .tituloContactate {
+      grid-area: contactate; }
+    .contenidoPrincipalContacto .ubicacion .tituloTelefono {
+      grid-area: telefono;
+      font-size: 4.6vh;
+      align-self: start; }
+    .contenidoPrincipalContacto .ubicacion .tituloLlamar {
+      grid-area: llamar;
+      font-size: 3.2vh;
+      text-decoration: none;
+      color: black; }
+      .contenidoPrincipalContacto .ubicacion .tituloLlamar strong {
+        background-color: #FFC229;
+        padding: 1vh;
+        border-radius: 2px; }
+        .contenidoPrincipalContacto .ubicacion .tituloLlamar strong:hover {
+          transform: scale(1.05);
+          opacity: 0.8; }
+  .contenidoPrincipalContacto .botonTexto {
+    position: absolute;
+    width: 5vw;
+    margin-left: 34vw;
+    margin-top: 40vh; }
+  .contenidoPrincipalContacto img {
+    width: 100%;
+    transition: all 0.3s ease-in-out; }
+    .contenidoPrincipalContacto img:hover {
+      transform: scale(1.15);
+      opacity: 0.8; }
+
+.contenedorEdificio {
+  display: grid;
+  grid-template-areas: "logo . nav" "ppal ppal ppal" "pie pie pie";
+  grid-template-rows: 10vh 85vh 5vh;
+  grid-template-columns: 50% 25% 25%;
+  animation-name: contenedorEdificio;
+  animation-duration: 3s; }
+
+@keyframes contenedorEdificio {
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
+
+.contenedorEdificio {
+  display: grid;
+  grid-template-areas: "logo . nav" "ppal ppal ppal" "pie pie pie";
+  grid-template-rows: 10vh 85vh 5vh;
+  grid-template-columns: 50% 25% 25%;
+  animation-name: contenedorEdificio;
+  animation-duration: 3s; }
+
+@keyframes contenedorEdificio {
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
+
+.contenidoPrincipalEdificio {
+  grid-area: ppal;
+  display: grid;
+  grid-template-areas: "titulo titulo" "cuadro ." "boton .";
+  grid-template-rows: 5vh 70vh 10vh;
+  grid-template-columns: 70% 30%; }
+  .contenidoPrincipalEdificio h2 {
+    grid-area: titulo;
+    margin-top: 1px;
+    margin-left: 12vw; }
+  .contenidoPrincipalEdificio .ubicacion {
+    grid-area: cuadro;
+    background-color: white;
+    height: 40vh;
+    width: 20vw;
+    padding: 2vw;
+    margin-top: 10vh;
+    margin-left: 12vw;
+    display: grid;
+    grid-template-areas: "ubicacion ubicacion" "direccion direccion" "cp cp" "email email" "contactate contactate" "llamar llamar";
+    grid-template-rows: 10vh 5vh 5vh 5vh 10vh 5vh; }
+    .contenidoPrincipalEdificio .ubicacion .tituloUbicacion {
+      grid-area: ubicacion;
+      font-size: 3.2vh; }
+    .contenidoPrincipalEdificio .ubicacion .tituloDireccion {
+      grid-area: direccion;
+      font-size: 2.5vh; }
+    .contenidoPrincipalEdificio .ubicacion .tituloCp {
+      grid-area: cp;
+      font-size: 2.5vh; }
+    .contenidoPrincipalEdificio .ubicacion .tituloEmail {
+      grid-area: email;
+      font-size: 2.5vh; }
+    .contenidoPrincipalEdificio .ubicacion .tituloContactate {
+      grid-area: contactate;
+      font-size: 2.5vh; }
+    .contenidoPrincipalEdificio .ubicacion .tituloLlamar {
+      grid-area: llamar;
+      font-size: 3.2vh;
+      text-decoration: none;
+      color: black; }
+      .contenidoPrincipalEdificio .ubicacion .tituloLlamar strong {
+        background-color: #FFC229;
+        padding: 1vh;
+        border-radius: 2px; }
+        .contenidoPrincipalEdificio .ubicacion .tituloLlamar strong:hover {
+          transform: scale(1.05);
+          opacity: 0.8; }
+
+.contenedorEdificio {
+  display: grid;
+  grid-template-areas: "logo . nav" "ppal ppal ppal" "pie pie pie";
+  grid-template-rows: 10vh 85vh 5vh;
+  grid-template-columns: 50% 25% 25%;
+  animation-name: contenedorEdificio;
+  animation-duration: 3s; }
+
+@keyframes contenedorEdificio {
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
+
+.piePaginaEdificio {
+  grid-area: pie;
+  display: grid;
+  grid-template-areas: "rrss copy";
+  grid-template-columns: 20% 80%;
+  animation-name: colorTexto;
+  animation-duration: 5s; }
+  .piePaginaEdificio ul {
+    grid-area: rrss;
+    display: flex;
     justify-self: right;
-    margin-right: 1vw;
+    margin-right: 5vw;
+    list-style: none;
+    align-self: center;
+    transition: all 0.3s ease-in-out; }
+  .piePaginaEdificio li a svg {
+    transition: all 0.3s ease-in-out; }
+    .piePaginaEdificio li a svg:hover {
+      opacity: 0.8;
+      transform: scale(1.05); }
+  .piePaginaEdificio h2 {
+    grid-area: copy;
+    font-size: 2vh;
+    font-weight: 300;
     align-self: center;
     color: black; }
 
@@ -776,6 +986,28 @@ footer {
   position: absolute;
   width: 98.93vw; }
   .imagenPrincipal img {
+    position: absolute;
+    z-index: -1;
+    max-width: 100%;
+    animation-name: contenedor;
+    animation-duration: 4s; }
+
+.imagenPrincipalContacto {
+  position: absolute;
+  width: 98.93vw;
+  margin-top: 17vh; }
+  .imagenPrincipalContacto img {
+    position: absolute;
+    z-index: -1;
+    max-width: 100%;
+    animation-name: contenedor;
+    animation-duration: 4s; }
+
+.imagenPrincipalEdificio {
+  position: absolute;
+  width: 98.93vw;
+  margin-top: 17vh; }
+  .imagenPrincipalEdificio img {
     position: absolute;
     z-index: -1;
     max-width: 100%;

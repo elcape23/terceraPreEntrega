@@ -1,19 +1,18 @@
 @import "base/variables";
 @import "base/lista";
 
-.contenedorProyectos{
+.contenedorEdificio{
     display: grid;
     grid-template-areas: "logo . nav"
                         "ppal ppal ppal"
-                        "pieProy pieProy pieProy";
+                        "pie pie pie";
     grid-template-rows: 10vh 85vh 5vh;
     grid-template-columns: 50% 25% 25%;
-    background-color: nth($colores, 2);
-    animation-name: contenedorProyectos;
+    animation-name: contenedorEdificio;
     animation-duration: 3s;
 }
 
-@keyframes contenedorProyectos{
+@keyframes contenedorEdificio{
     0%{
         opacity: 0.0;
     }

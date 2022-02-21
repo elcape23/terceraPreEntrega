@@ -19,69 +19,60 @@
 <body>
     <div class="contenedorContacto">
         <!--Imagen principal-->
-        <div class="imagenPrincipal">
-            <img src="/img/mapa-myle.png" alt="imagenEquipo">
+        <div class="imagenPrincipalContacto">
+            <img src="/img/mapa-myle.png" alt="imagenUbicacion">
         </div>
         <!--Encabezado con logo de la marca-->
         <header class="encabezado">
             <a href="/index.html" >
-                <img src="../img/logo-myle.png" alt="MYLE Logo" class="logoMyleNosotros">
+                <img src="../img/logo-myle.png" alt="MYLE Logo" class="logoMyle">
             </a>
         </header>
 
         <!--Navegador-->
-        <nav class="navegador">
-            <ul class="listaNav">
-                <li>
-                    <a href="/index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="/pages/nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="/pages/proyectos.html">Proyectos</a>
-                    <ul class="subMenu">
-                        <li>Edificio A1</li>
-                        <li>Edificio Santa Fe</li>
-                        <li>Casa CV</li>
-                        <li>Casa Cafayate</li>
-                    </ul>
-                </li>
-                <li class="letraFuerte">
-                    <a href="/pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    </li >
+                    <li class="nav-item">
+                        <a class="nav-link" href="./proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                    </li>
 
-        <!--Elemento divisor - Línea horizontal-->
-        <div class="lineaDivisoriaNosotros">        </div>
+                </ul>
+            </div>
+        </nav>
 
         <!--Parte principal-->
         <main class="contenidoPrincipalContacto">
-            <!--Mapa-->
+            <!--Título principal-->
+                <h2 class="tituloContacto">
+                    Contacto
+                </h2>
+
+            <!--Box de ubicación-->
             <div class="ubicacion">
-                <div class="ubicacionCaja">
                     <p class="tituloUbicacion"><strong>Yerba Buena</strong>, Tucumán</p>
                     <p class="tituloDireccion">Chacho Peñaloza 5 - Local 16</p>
                     <p class="tituloCp">CP 4107</p>
                     <p class="tituloEmail"><strong>Email:</strong> info@mylearq.com.ar</p>
-                    <p class="tituloContactate">Contactate con nosotros</p>
+                    <p class="tituloContactate">Contactate con nosotros:</p>
                     <p class="tituloTelefono"><strong>+54 381 4486426</strong></p>
                     <a class="tituloLlamar" href="tel:+543814486426"><strong>Llamar</strong></a>
-                </div>
             </div>
-            <!--TÍTULO DESTACADO-->
-            <div class="tituloContacto">
-                <h2>
-                    Contacto
-                </h2>
-            </div>
+
             <!--BOTÓN VER PROYECTO-->
-            <div class="botonContacto">
-                <p>
-                    <a class="botonTexto" href="https://goo.gl/maps/WC8VNdzuq75ncrS27" target="blank">Ubicación</a>
-                </p>
-            </div>
+            <a class="botonTexto" href="https://goo.gl/maps/WC8VNdzuq75ncrS27" target="blank">
+                <img src="/img/ubicacion__myle.png" alt="logoUbicacion">
+            </a>
+
             <!--Logo de WhatsApp-->
             <a href="wa.me/+543814486426" class="logoWhatsapp">
                 <img src="../img/logo-whatsapp.png" alt="logoWhatsApp">

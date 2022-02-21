@@ -6,6 +6,7 @@
                          "ppal ppal"
                          "pie pie";
     grid-template-rows: 10vh 295vh 5vh;
+    grid-template-columns: 50% 50%;
     animation-name: contenedor;
     animation-duration: $duracion-por-defecto;
 }

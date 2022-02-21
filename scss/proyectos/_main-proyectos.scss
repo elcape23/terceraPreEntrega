@@ -7,28 +7,34 @@
     display: grid;
     grid-template-areas: ". nuestros ."
                          ". proyectos ."
-                         ". img ."
-                         ". . wa";
-    grid-template-rows: 5% 10% 80% 5%;
-    grid-template-columns: 15% 70% 15%;
+                         ". img .";
+    grid-template-rows: 5vh 8vh 72vh;
+    grid-template-columns: 12vw 76vw 12vw;
     h3{
-        font-weight: 600;
+        font-weight: $grosor-n3;
         grid-area: nuestros;
-        align-self: center;
+        align-self: start;
         animation-name: colorTexto;
         animation-duration: 3s;
     }
     h1{
-        font-size: 7vh;
-        font-weight: 900;
+        font-size: $fuente-n6;
+        font-weight: $grosor-n4;
         grid-area: proyectos;
         align-self: end;
         animation-name: colorTexto;
         animation-duration: 3s;
     }
     .carousel{
+        height: 72vh;
         grid-area: img;
         animation-name: carousel;
         animation-duration: 3s;
+        div{
+            height: 100%;
+            img{
+                height: 100%;
+            }
+        }
     }
 }
