@@ -38,3 +38,24 @@
         }
     }
 }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 820px){
+    .contenidoPrincipalProyectos{
+        h1{
+            font-size: $fuente-n4;
+        }
+        .carousel{
+            height: 72vh;
+            grid-area: img;
+            animation-name: carousel;
+            animation-duration: 3s;
+            div{
+                height: 100%;
+                img{
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

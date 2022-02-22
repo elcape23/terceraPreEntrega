@@ -232,3 +232,150 @@ main{
         }
     }
 }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 376px) and (max-width: 820px){
+    main{
+        grid-template-areas: ". residencial ."
+                             ". edificio ."
+                             ". proy ."
+                             ". quienes ."
+                             ". texto ."
+                             "project project project";
+        grid-template-rows: 70vh 7vh 10vh 10vh 30vh 100vh;
+        grid-template-columns: 10vw 80vw 10vw;
+        h1{
+            font-size: $fuente-n3-medio;
+            background-color: nth($colores, 2);
+            padding: 2.5vw;
+            border-radius: 2vw;
+            justify-self: center;
+            text-shadow: 1px 1px 2px nth($colores, 1);
+        }
+        h3{
+            display: none;
+        }
+        .tituloVerProyecto{
+            font-weight: $grosor-n3;
+            justify-self: center;
+            border-radius: 2vw;
+            padding: 2.5vw;
+            background-color: nth($colores, 3);
+        }
+
+        /*Línea divisoria*/
+        .lineaDivisoria {
+            margin-top: $altura-divisor - 22vh;
+            width: 100vw;
+        }
+        /* Título Sobre Nosotros*/
+        h2{
+            margin-top: 0%;
+            font-size: $fuente-n4;
+            justify-self: center;
+            align-self: center;
+            margin-left: 0%;
+        }
+        /*Párrafos sobre nosotros*/
+        .sobreNosotrosTexto{
+            width: 80vw;
+            margin: 0%;
+            grid-area: texto;
+            align-self: start;
+            font-size: $fuente-n4;
+            /*Primer título*/
+            h6{
+                display: none;
+            /*Párrafo principal*/
+            .parrafoUno{
+                margin-top: 0%;
+                width: 100%;
+                font-weight: $grosor-n3;
+                font-size: $fuente-n2;}
+            }
+            /*Párrafo secundario*/
+            .parrafoDos{
+                display: none;
+            }
+            /*Botón conocer más*/
+            a{
+                justify-content: center;
+            }
+        }
+
+        /*Línea divisoria*/
+        .lineaDivisoriaDos {
+            margin-top: $altura-divisor + 15vh;
+            width: 100vw;
+        }
+
+        .projectsMain{
+            grid-area: project;
+            display: grid;
+            grid-template-areas: "titulo titulo"
+                                 "texto texto"
+                                 "projectOne projectOne"
+                                 "projectTwo projectTwo";
+            grid-template-rows: 5vh 25vh 30vh 30vh;
+            grid-template-columns: 50% 50%;
+            /*Títulos proyectos*/
+            .projectsTitulo{
+                grid-area: titulo;
+                align-self: start;
+                margin-top: 0%;
+                z-index: 100;
+                margin-left: 0%;
+                font-size: $fuente-n4;
+            }
+            /*Párrafo explicativo de nuestros proyectos*/
+            .projectsParrafo{
+                grid-area: texto;
+                margin-left: 10vw;
+                margin-right: 10vw;
+            }
+            /*Primer proyecto*/
+            .projectOne{
+                grid-area: projectOne;
+                margin-left: 10vw;
+                margin-right: 10vw;
+                margin-top: 0%;
+                align-self: start;
+                /*Nombre del proyecto*/
+                .tituloProjectOne{
+                    font-size: $fuente-n2;
+                }
+                /*Nombre de la ubicación del proyecto*/
+                .ubicacionProjectOne{
+                    font-size: $fuente-n1;
+                }
+            }
+            /*Segundo proyecto*/
+            .projectTwo{
+                grid-area: projectTwo;
+                margin-left: 10vw;
+                margin-right: 10vw;
+                margin-top: 0%;
+                align-self: start;
+                /*Nombre del proyecto*/
+                .tituloProjectTwo{
+                    font-size: $fuente-n2;
+                }
+                /*Nombre de la ubicación del proyecto*/
+                .ubicacionProjectTwo{
+                    font-size: $fuente-n1;
+                }
+            }
+            /*Línea divisoria*/
+            .lineaDivisoriaTres {
+                display: none;
+            }
+        }
+
+        /*Logo de WhatsApp*/
+        .logoWhatsapp{
+            position: fixed;
+            margin-left: 80vw;
+            margin-top: 55vh;
+        }
+    }
+}

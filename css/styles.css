@@ -39,6 +39,12 @@ header {
     header img:hover {
       opacity: 0.5; }
 
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 820px) {
+  header img {
+    width: 100%;
+    margin-left: 50%; } }
+
 .contenedor {
   display: grid;
   grid-template-areas: "logo nav" "ppal ppal" "pie pie";
@@ -86,6 +92,11 @@ nav {
         nav ul li ul li {
           margin-top: 2vh;
           justify-self: left; }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 820px) {
+  nav {
+    margin-top: 10vh; } }
 
 .contenedor {
   display: grid;
@@ -285,6 +296,118 @@ main {
         opacity: 0.8;
         transform: scale(1.05); }
 
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 376px) and (max-width: 820px) {
+  main {
+    grid-template-areas: ". residencial ." ". edificio ." ". proy ." ". quienes ." ". texto ." "project project project";
+    grid-template-rows: 70vh 7vh 10vh 10vh 30vh 100vh;
+    grid-template-columns: 10vw 80vw 10vw;
+    /*Línea divisoria*/
+    /* Título Sobre Nosotros*/
+    /*Párrafos sobre nosotros*/
+    /*Línea divisoria*/
+    /*Logo de WhatsApp*/ }
+    main h1 {
+      font-size: 3.2vh;
+      background-color: white;
+      padding: 2.5vw;
+      border-radius: 2vw;
+      justify-self: center;
+      text-shadow: 1px 1px 2px black; }
+    main h3 {
+      display: none; }
+    main .tituloVerProyecto {
+      font-weight: 600;
+      justify-self: center;
+      border-radius: 2vw;
+      padding: 2.5vw;
+      background-color: #FFC229; }
+    main .lineaDivisoria {
+      margin-top: 88vh;
+      width: 100vw; }
+    main h2 {
+      margin-top: 0%;
+      font-size: 4.6vh;
+      justify-self: center;
+      align-self: center;
+      margin-left: 0%; }
+    main .sobreNosotrosTexto {
+      width: 80vw;
+      margin: 0%;
+      grid-area: texto;
+      align-self: start;
+      font-size: 4.6vh;
+      /*Primer título*/
+      /*Párrafo secundario*/
+      /*Botón conocer más*/ }
+      main .sobreNosotrosTexto h6 {
+        display: none;
+        /*Párrafo principal*/ }
+        main .sobreNosotrosTexto h6 .parrafoUno {
+          margin-top: 0%;
+          width: 100%;
+          font-weight: 600;
+          font-size: 2.2vh; }
+      main .sobreNosotrosTexto .parrafoDos {
+        display: none; }
+      main .sobreNosotrosTexto a {
+        justify-content: center; }
+    main .lineaDivisoriaDos {
+      margin-top: 125vh;
+      width: 100vw; }
+    main .projectsMain {
+      grid-area: project;
+      display: grid;
+      grid-template-areas: "titulo titulo" "texto texto" "projectOne projectOne" "projectTwo projectTwo";
+      grid-template-rows: 5vh 25vh 30vh 30vh;
+      grid-template-columns: 50% 50%;
+      /*Títulos proyectos*/
+      /*Párrafo explicativo de nuestros proyectos*/
+      /*Primer proyecto*/
+      /*Segundo proyecto*/
+      /*Línea divisoria*/ }
+      main .projectsMain .projectsTitulo {
+        grid-area: titulo;
+        align-self: start;
+        margin-top: 0%;
+        z-index: 100;
+        margin-left: 0%;
+        font-size: 4.6vh; }
+      main .projectsMain .projectsParrafo {
+        grid-area: texto;
+        margin-left: 10vw;
+        margin-right: 10vw; }
+      main .projectsMain .projectOne {
+        grid-area: projectOne;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-top: 0%;
+        align-self: start;
+        /*Nombre del proyecto*/
+        /*Nombre de la ubicación del proyecto*/ }
+        main .projectsMain .projectOne .tituloProjectOne {
+          font-size: 2.2vh; }
+        main .projectsMain .projectOne .ubicacionProjectOne {
+          font-size: 2vh; }
+      main .projectsMain .projectTwo {
+        grid-area: projectTwo;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-top: 0%;
+        align-self: start;
+        /*Nombre del proyecto*/
+        /*Nombre de la ubicación del proyecto*/ }
+        main .projectsMain .projectTwo .tituloProjectTwo {
+          font-size: 2.2vh; }
+        main .projectsMain .projectTwo .ubicacionProjectTwo {
+          font-size: 2vh; }
+      main .projectsMain .lineaDivisoriaTres {
+        display: none; }
+    main .logoWhatsapp {
+      position: fixed;
+      margin-left: 80vw;
+      margin-top: 55vh; } }
+
 .contenedor {
   display: grid;
   grid-template-areas: "logo nav" "ppal ppal" "pie pie";
@@ -419,6 +542,19 @@ footer {
   animation-duration: 1s;
   transition: all 1s ease-in-out; }
 
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 376px) and (max-width: 820px) {
+  .contenedorNosotros {
+    grid-template-rows: 10vh 315vh 5vh; }
+  .botonSoli {
+    display: none; }
+  .botonJuanjo {
+    display: none; }
+  .botonJoseLuis {
+    display: none; }
+  .botonBelu {
+    display: none; } }
+
 .contenedorNosotros {
   display: grid;
   grid-template-areas: "logo nav" "ppal ppal" "pie pie";
@@ -511,6 +647,19 @@ footer {
   animation-name: contenedor;
   animation-duration: 1s;
   transition: all 1s ease-in-out; }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 376px) and (max-width: 820px) {
+  .contenedorNosotros {
+    grid-template-rows: 10vh 315vh 5vh; }
+  .botonSoli {
+    display: none; }
+  .botonJuanjo {
+    display: none; }
+  .botonJoseLuis {
+    display: none; }
+  .botonBelu {
+    display: none; } }
 
 /*Contenido principal Nosotros*/
 .contenidoPrincipalNosotros {
@@ -660,6 +809,7 @@ footer {
         margin-left: 20vw;
         font-weight: 300; }
       .contenidoPrincipalNosotros .participantes .cartaJj p {
+        grid-area: texto;
         margin-left: 20vw;
         margin-right: 5vw;
         font-size: 2.5vh;
@@ -675,6 +825,116 @@ footer {
       width: 60vw;
       opacity: 0.3; }
 
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 376px) and (max-width: 820px) {
+  .contenidoPrincipalNosotros {
+    grid-template-areas: ". nuestro ." ". equipo ." "part part part";
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-rows: 5vh 10vh 100vh;
+    /*Título secundario - Nuestro*/
+    /*Título principal - Equipo*/ }
+    .contenidoPrincipalNosotros h3 {
+      font-size: 2.5vh; }
+    .contenidoPrincipalNosotros h1 {
+      font-size: 4.6vh; }
+    .contenidoPrincipalNosotros .participantes {
+      grid-area: part;
+      display: grid;
+      grid-template-areas: "soli soli soli" "belu belu belu" "jl jl jl" "jj jj jj";
+      grid-template-columns: 80vw 20vw;
+      grid-template-rows: 75vh 75vh 75vh 75vh;
+      /*Línea divisoria*/
+      /*Línea divisoria*/
+      /*Línea divisoria*/
+      /*Línea divisoria*/
+      /*Línea divisoria*/ }
+      .contenidoPrincipalNosotros .participantes .lineaDivisoriaNosotros {
+        display: none; }
+      .contenidoPrincipalNosotros .participantes .lineaDivisoriaNosotrosDos {
+        margin-top: 72.5vh;
+        width: 80vw; }
+      .contenidoPrincipalNosotros .participantes .cartaSoli {
+        grid-area: soli;
+        display: grid;
+        grid-template-areas: ". imagen ." ". titulo ." ". texto .";
+        grid-template-rows: 40vh 5vh 25vh;
+        grid-template-columns: 10vw 80vw 10vw; }
+        .contenidoPrincipalNosotros .participantes .cartaSoli img {
+          justify-self: center;
+          margin-right: 0%; }
+        .contenidoPrincipalNosotros .participantes .cartaSoli h4 {
+          font-size: 2.5vh;
+          margin-left: 0%;
+          align-self: center;
+          text-align: center; }
+        .contenidoPrincipalNosotros .participantes .cartaSoli p {
+          margin-left: 10vw;
+          margin-right: 10vw;
+          font-size: 2.2vh; }
+      .contenidoPrincipalNosotros .participantes .lineaDivisoriaNosotrosTres {
+        margin-top: 145vh;
+        width: 80vw; }
+      .contenidoPrincipalNosotros .participantes .cartaBelu {
+        grid-area: belu;
+        display: grid;
+        grid-template-areas: ". imagen ." ". titulo ." ". texto .";
+        grid-template-rows: 40vh 5vh 25vh;
+        grid-template-columns: 10vw 80vw 10vw; }
+        .contenidoPrincipalNosotros .participantes .cartaBelu img {
+          justify-self: center;
+          margin-right: 0%; }
+        .contenidoPrincipalNosotros .participantes .cartaBelu h4 {
+          font-size: 2.5vh;
+          margin-left: 0%;
+          align-self: center;
+          text-align: center; }
+        .contenidoPrincipalNosotros .participantes .cartaBelu p {
+          margin-left: 10vw;
+          margin-right: 10vw;
+          font-size: 2.2vh; }
+      .contenidoPrincipalNosotros .participantes .lineaDivisoriaNosotrosCuatro {
+        margin-top: 222vh;
+        width: 80vw; }
+      .contenidoPrincipalNosotros .participantes .cartaJl {
+        grid-area: jl;
+        display: grid;
+        grid-template-areas: ". imagen ." ". titulo ." ". texto .";
+        grid-template-rows: 40vh 5vh 25vh;
+        grid-template-columns: 10vw 80vw 10vw; }
+        .contenidoPrincipalNosotros .participantes .cartaJl img {
+          justify-self: center;
+          margin-right: 0%; }
+        .contenidoPrincipalNosotros .participantes .cartaJl h4 {
+          font-size: 2.5vh;
+          margin-left: 0%;
+          align-self: center;
+          text-align: center; }
+        .contenidoPrincipalNosotros .participantes .cartaJl p {
+          margin-left: 10vw;
+          margin-right: 10vw;
+          font-size: 2.2vh; }
+      .contenidoPrincipalNosotros .participantes .cartaJj {
+        grid-area: jj;
+        display: grid;
+        grid-template-areas: ". imagen ." ". titulo ." ". texto .";
+        grid-template-rows: 40vh 5vh 25vh;
+        grid-template-columns: 10vw 80vw 10vw; }
+        .contenidoPrincipalNosotros .participantes .cartaJj img {
+          justify-self: center;
+          margin-right: 0%; }
+        .contenidoPrincipalNosotros .participantes .cartaJj h4 {
+          font-size: 2.5vh;
+          margin-left: 0%;
+          align-self: center;
+          text-align: center; }
+        .contenidoPrincipalNosotros .participantes .cartaJj p {
+          margin-left: 10vw;
+          margin-right: 10vw;
+          font-size: 2.2vh; }
+      .contenidoPrincipalNosotros .participantes .lineaDivisoriaNosotrosCinco {
+        margin-top: 297.5vh;
+        width: 80vw; } }
+
 .contenedorProyectos {
   display: grid;
   grid-template-areas: "logo . nav" "ppal ppal ppal" "pieProy pieProy pieProy";
@@ -690,6 +950,12 @@ footer {
   100% {
     opacity: 1; } }
 
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 820px) {
+  .contenedorProyectos {
+    grid-template-areas: "logo nav" "ppal ppal" "pieProy pieProy";
+    grid-template-columns: 50% 50%; } }
+
 .contenedorProyectos {
   display: grid;
   grid-template-areas: "logo . nav" "ppal ppal ppal" "pieProy pieProy pieProy";
@@ -704,6 +970,12 @@ footer {
     opacity: 0.0; }
   100% {
     opacity: 1; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 820px) {
+  .contenedorProyectos {
+    grid-template-areas: "logo nav" "ppal ppal" "pieProy pieProy";
+    grid-template-columns: 50% 50%; } }
 
 .contenidoPrincipalProyectos {
   grid-area: ppal;
@@ -734,6 +1006,20 @@ footer {
       .contenidoPrincipalProyectos .carousel div img {
         height: 100%; }
 
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 820px) {
+  .contenidoPrincipalProyectos h1 {
+    font-size: 4.6vh; }
+  .contenidoPrincipalProyectos .carousel {
+    height: 72vh;
+    grid-area: img;
+    animation-name: carousel;
+    animation-duration: 3s; }
+    .contenidoPrincipalProyectos .carousel div {
+      height: 100%; }
+      .contenidoPrincipalProyectos .carousel div img {
+        height: 100%; } }
+
 .contenedorProyectos {
   display: grid;
   grid-template-areas: "logo . nav" "ppal ppal ppal" "pieProy pieProy pieProy";
@@ -748,6 +1034,12 @@ footer {
     opacity: 0.0; }
   100% {
     opacity: 1; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 820px) {
+  .contenedorProyectos {
+    grid-template-areas: "logo nav" "ppal ppal" "pieProy pieProy";
+    grid-template-columns: 50% 50%; } }
 
 .piePaginaProyectos {
   grid-area: pieProy; }
@@ -769,6 +1061,17 @@ footer {
     transform: rotate(-90deg); }
     .piePaginaProyectos .copyrightProyectos strong {
       font-weight: 600; }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 820px) {
+  .piePaginaProyectos {
+    grid-area: pieProy; }
+    .piePaginaProyectos ul {
+      margin-bottom: 0%; }
+    .piePaginaProyectos .copyrightProyectos {
+      margin-bottom: 0%;
+      margin-left: 3vw;
+      transform: rotate(0deg); } }
 
 .contenedorContacto {
   display: grid;
@@ -992,6 +1295,12 @@ footer {
     animation-name: contenedor;
     animation-duration: 4s; }
 
+/*Esconder imagen de mobile*/
+.imagenPrincipalMobile {
+  display: none; }
+
+/*CONTACTO*/
+/*Imagen principal*/
 .imagenPrincipalContacto {
   position: absolute;
   width: 98.93vw;
@@ -1003,6 +1312,8 @@ footer {
     animation-name: contenedor;
     animation-duration: 4s; }
 
+/*EDIFICIO A1*/
+/*Imagen principal*/
 .imagenPrincipalEdificio {
   position: absolute;
   width: 98.93vw;
@@ -1013,3 +1324,21 @@ footer {
     max-width: 100%;
     animation-name: contenedor;
     animation-duration: 4s; }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 820px) {
+  /*INDEX*/
+  /*Imagen principal mobile*/
+  .imagenPrincipal {
+    display: none; }
+  .imagenPrincipalMobile {
+    margin-top: 12vh;
+    display: block;
+    position: absolute;
+    width: 100vw; }
+    .imagenPrincipalMobile img {
+      position: absolute;
+      z-index: -1;
+      max-width: 100%;
+      animation-name: contenedor;
+      animation-duration: 4s; } }

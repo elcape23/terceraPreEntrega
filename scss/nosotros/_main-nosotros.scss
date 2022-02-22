@@ -187,6 +187,7 @@
                 font-weight: $grosor-n1;
             }
             p{
+                grid-area: texto;
                 margin-left: 20vw;
                 margin-right: $margen-lateral-principal;
                 font-size: $fuente-n3;
@@ -205,6 +206,158 @@
             height: 0.5px;
             width: 60vw;
             opacity: 0.3;
+        }
+    }
+}
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 376px) and (max-width: 820px){
+    .contenidoPrincipalNosotros{
+        grid-template-areas: ". nuestro ."
+                             ". equipo ."
+                             "part part part";
+        grid-template-columns: 10vw 80vw 10vw;
+        grid-template-rows: 5vh 10vh 100vh;
+        /*Título secundario - Nuestro*/
+        h3{
+            font-size: $fuente-n3;
+        }
+        /*Título principal - Equipo*/
+        h1{
+            font-size: $fuente-n4;
+        }
+        .participantes{
+            grid-area: part;
+            display: grid;
+            grid-template-areas: "soli soli soli"
+                                 "belu belu belu"
+                                 "jl jl jl"
+                                 "jj jj jj";
+            grid-template-columns: 80vw 20vw;
+            grid-template-rows: 75vh 75vh 75vh 75vh;
+            /*Línea divisoria*/
+            .lineaDivisoriaNosotros {
+                display: none;
+            }
+            /*Línea divisoria*/
+            .lineaDivisoriaNosotrosDos {
+                margin-top: 72.5vh;
+                width: 80vw;
+            }
+            .cartaSoli{
+                grid-area: soli;
+                display: grid;
+                grid-template-areas: ". imagen ."
+                                     ". titulo ."
+                                     ". texto .";
+                grid-template-rows: 40vh 5vh 25vh;
+                grid-template-columns: 10vw 80vw 10vw;
+                img{
+                    justify-self: center;
+                    margin-right: 0%;
+                }
+                h4{
+                    font-size: $fuente-n3;
+                    margin-left: 0%;
+                    align-self: center;
+                    text-align: center;
+                }
+                p{
+                    margin-left: 10vw;
+                    margin-right: 10vw;
+                    font-size: $fuente-n2;
+                }
+            }
+
+            /*Línea divisoria*/
+            .lineaDivisoriaNosotrosTres {
+                margin-top: 145vh;
+                width: 80vw;
+            }
+            .cartaBelu{
+                grid-area: belu;
+                display: grid;
+                grid-template-areas: ". imagen ."
+                                     ". titulo ."
+                                     ". texto .";
+                grid-template-rows: 40vh 5vh 25vh;
+                grid-template-columns: 10vw 80vw 10vw;
+                img{
+                    justify-self: center;
+                    margin-right: 0%;
+                }
+                h4{
+                    font-size: $fuente-n3;
+                    margin-left: 0%;
+                    align-self: center;
+                    text-align: center;
+                }
+                p{
+                    margin-left: 10vw;
+                    margin-right: 10vw;
+                    font-size: $fuente-n2;
+                }
+            }
+
+            /*Línea divisoria*/
+            .lineaDivisoriaNosotrosCuatro {
+                margin-top: 222vh;
+                width: 80vw;
+            }
+
+            .cartaJl{
+                grid-area: jl;
+                display: grid;
+                grid-template-areas: ". imagen ."
+                                     ". titulo ."
+                                     ". texto .";
+                grid-template-rows: 40vh 5vh 25vh;
+                grid-template-columns: 10vw 80vw 10vw;
+                img{
+                    justify-self: center;
+                    margin-right: 0%;
+                }
+                h4{
+                    font-size: $fuente-n3;
+                    margin-left: 0%;
+                    align-self: center;
+                    text-align: center;
+                }
+                p{
+                    margin-left: 10vw;
+                    margin-right: 10vw;
+                    font-size: $fuente-n2;
+                }
+            }
+            .cartaJj{
+                grid-area: jj;
+                display: grid;
+                grid-template-areas: ". imagen ."
+                                     ". titulo ."
+                                     ". texto .";
+                grid-template-rows: 40vh 5vh 25vh;
+                grid-template-columns: 10vw 80vw 10vw;
+                img{
+                    justify-self: center;
+                    margin-right: 0%;
+                }
+                h4{
+                    font-size: $fuente-n3;
+                    margin-left: 0%;
+                    align-self: center;
+                    text-align: center;
+                }
+                p{
+                    margin-left: 10vw;
+                    margin-right: 10vw;
+                    font-size: $fuente-n2;
+                }
+            }
+            /*Línea divisoria*/
+            .lineaDivisoriaNosotrosCinco {
+                margin-top: 297.5vh;
+                width: 80vw;
+            }
         }
     }
 }

@@ -29,5 +29,20 @@
         strong{
             font-weight: $grosor-n3;
         }
+    }
+}
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 820px){
+    .piePaginaProyectos{
+        grid-area: pieProy;
+        ul{
+            margin-bottom: 0%;
         }
+        .copyrightProyectos{
+            margin-bottom: 0%;
+            margin-left: 3vw;
+            transform: rotate(0deg);
+        }
+    }
 }

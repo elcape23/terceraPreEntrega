@@ -35,6 +35,14 @@
         animation-duration: 4s;
     }
 }
+
+/*Esconder imagen de mobile*/
+.imagenPrincipalMobile{
+    display: none;
+}
+
+/*CONTACTO*/
+/*Imagen principal*/
 .imagenPrincipalContacto{
     position: absolute;
     width: 98.93vw;
@@ -47,6 +55,9 @@
         animation-duration: 4s;
     }
 }
+
+/*EDIFICIO A1*/
+/*Imagen principal*/
 .imagenPrincipalEdificio{
     position: absolute;
     width: 98.93vw;
@@ -57,5 +68,27 @@
         max-width: 100%;
         animation-name: contenedor;
         animation-duration: 4s;
+    }
+}
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 820px){
+/*INDEX*/
+/*Imagen principal mobile*/
+    .imagenPrincipal{
+        display: none;
+    }
+    .imagenPrincipalMobile{
+        margin-top: 12vh;
+        display: block;
+        position: absolute;
+        width: 100vw;
+        img{
+            position: absolute;
+            z-index: -1;
+            max-width: 100%;
+            animation-name: contenedor;
+            animation-duration: 4s;
+        }
     }
 }

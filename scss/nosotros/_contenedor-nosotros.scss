@@ -119,3 +119,22 @@
     animation-duration: 1s;
     transition: all 1s ease-in-out;
 }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 376px) and (max-width: 820px){
+    .contenedorNosotros{
+        grid-template-rows: 10vh 315vh 5vh;
+    }
+    .botonSoli{
+        display: none;
+    }
+    .botonJuanjo{
+        display: none;
+    }
+    .botonJoseLuis{
+        display: none;
+    }
+    .botonBelu{
+        display: none;
+    }
+}

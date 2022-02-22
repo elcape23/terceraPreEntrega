@@ -44,5 +44,11 @@ nav{
             }
         }
     }
+}
 
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 820px){
+    nav{
+        margin-top: 10vh;
+    }
 }
